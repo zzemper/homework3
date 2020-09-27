@@ -13,11 +13,11 @@ body{
   font-size: 16px;
   font-family: 'Andika', sans-serif;
   margin: 1.2em;
-  font-family: 'Andika', sans-serif;
   background-image: url("../images/pigeon-background.JPEG");
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   background-color: #DDDDDD;
+  background-repeat: no-repeat;
 }
 
 main{
@@ -28,7 +28,7 @@ h1{
   color: #c12258;
   font-size: 2em;
   text-align: center;
-  line-height: 2;
+  line-height: 200%;
 }
 
 caption{
@@ -40,8 +40,9 @@ p{
 }
 
 a{
-  color: #B92751;
+  color: #B21F50;
   font-size: 16px;
+  text-decoration-line: underline;
   text-decoration-style: wavy;
 }
 
@@ -59,6 +60,8 @@ table{
   min-width: 125px;
   padding: 10px;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
   background-color: #7e0820;
 }
 
@@ -73,7 +76,7 @@ th{
   border-top: 2px solid black;
 }
 
-*.focus{
+:focus{
   color: #417243;
   border-style: dashed;
   border-radius: 3px;
@@ -87,26 +90,42 @@ thead tr:first-child th:last-child{
   border-top-right-radius: 10px;
 }
 
+thead tr:last-child th:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+thead tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+
 footer{
   width:100%;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0px;
+  display: inline-block;
 }
 
 .rowhead{
   border-right: 2px solid black;
+  border-top: 2px solid black;
+  vertical-align: middle;
 }
 
-tbody tr :nth-child(even) {
-  background: #D1D1D1;
+tr:nth-child(odd) {
+  background-color: transparent;
 }
 
-tbody tr :nth-child(odd) {
-  background: transparent;
+tr:nth-child(even) {
+  background-color: #D1D1D1;
 }
 
-tbody tr:hover{
-  background-color: rgba(126, 8, 32, .25);
+tr:hover{
+  background-color: rgba(126, 8, 48, .25);
 }
